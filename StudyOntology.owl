@@ -26,10 +26,10 @@
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject
 :Subject rdf:type owl:Class ;
-         rdfs:subClassOf [ rdf:type owl:Restriction ;
-                           owl:onProperty :participates_in ;
-                           owl:someValuesFrom :Study
-                         ] .
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :participates_in ;
+                               owl:someValuesFrom :Study
+                             ] .
 
 
 #################################################################
