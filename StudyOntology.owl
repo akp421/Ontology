@@ -34,6 +34,20 @@
 #    Classes
 #################################################################
 
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntology#ImportantSubjects
+:ImportantSubjects rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :Subject
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :participates_in ;
+                                                                owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                owl:onClass :Study
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   :var "ImportantSubject" .
+
+
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Study
 :Study rdf:type owl:Class ;
        :name "Study" .
@@ -41,8 +55,7 @@
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject
 :Subject rdf:type owl:Class ;
-         :name "Subject" ;
-         rdfs:label "StudySubject" .
+         :name "Subject" .
 
 
 #################################################################
@@ -87,7 +100,8 @@
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectB
 :SubjectB rdf:type owl:NamedIndividual ,
                    :Subject ;
-          :participates_in :StudyB ;
+          :participates_in :StudyA ,
+                           :StudyB ;
           :name "SubjectB" .
 
 
