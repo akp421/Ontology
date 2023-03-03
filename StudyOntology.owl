@@ -64,6 +64,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntology#SubjectC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntology#SubjectC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject"/>
+        <participates_in rdf:resource="http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntology#SubjectD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntology#SubjectD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject"/>
+        <participates_in rdf:resource="http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA">
