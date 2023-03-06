@@ -1,0 +1,113 @@
+@prefix : <http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntologyInfer#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntologyInfer> .
+
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntologyInfer> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#var
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#var> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in> rdf:type owl:ObjectProperty ;
+                                                                             rdfs:domain <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> ;
+                                                                             rdfs:range <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Study> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#ImportantSubjects
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#ImportantSubjects> rdf:type owl:Class ;
+                                                                               owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject>
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in> ;
+                                                                                                                            owl:hasValue <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA>
+                                                                                                                          ]
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in> ;
+                                                                                                                            owl:hasValue <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyB>
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ] ;
+                                                                               rdfs:subClassOf <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> ;
+                                                                               <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#var> "ImportantSubject" .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Study
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Study> rdf:type owl:Class ;
+                                                                   <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "Study" .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> rdf:type owl:Class ;
+                                                                     <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "Subject" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Study> ;
+                                                                    <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "StudyA" ;
+                                                                    <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#var> "Variable" .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyB
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyB> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Study> ;
+                                                                    <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "StudyB" ;
+                                                                    <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#var> "Variable" .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectA
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectA> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in> <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "SubjectA" .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectB
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectB> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#ImportantSubjects> ,
+                                                                               <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in> <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA> ,
+                                                                                                                                                   <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyB> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "SubjectB" .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectC
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectC> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in> <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "SubjectC" .
+
+
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectD
+<http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectD> rdf:type owl:NamedIndividual ,
+                                                                               <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#participates_in> <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA> ;
+                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "SubjectD" .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
