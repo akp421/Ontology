@@ -16,10 +16,6 @@
 :name rdf:type owl:AnnotationProperty .
 
 
-###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#var
-:var rdf:type owl:AnnotationProperty .
-
-
 #################################################################
 #    Object Properties
 #################################################################
@@ -48,7 +44,7 @@
                                                             ) ;
                                          rdf:type owl:Class
                                        ] ;
-                   :var "ImportantSubject" .
+                   :name "ImportantSubjects" .
 
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Study
@@ -68,15 +64,13 @@
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyA
 :StudyA rdf:type owl:NamedIndividual ,
                  :Study ;
-        :name "StudyA" ;
-        :var "Variable" .
+        :name "StudyA" .
 
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#StudyB
 :StudyB rdf:type owl:NamedIndividual ,
                  :Study ;
-        :name "StudyB" ;
-        :var "Variable" .
+        :name "StudyB" .
 
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#SubjectA
