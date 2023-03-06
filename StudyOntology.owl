@@ -39,8 +39,11 @@
                    owl:equivalentClass [ owl:intersectionOf ( :Subject
                                                               [ rdf:type owl:Restriction ;
                                                                 owl:onProperty :participates_in ;
-                                                                owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                                owl:onClass :Study
+                                                                owl:hasValue :StudyA
+                                                              ]
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :participates_in ;
+                                                                owl:hasValue :StudyB
                                                               ]
                                                             ) ;
                                          rdf:type owl:Class
