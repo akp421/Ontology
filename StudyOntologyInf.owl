@@ -33,6 +33,11 @@
 #    Classes
 #################################################################
 
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/StudyOntologyInf#Person
+:Person rdf:type owl:Class ;
+        <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "Person" .
+
+
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#ImportantSubjects
 <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#ImportantSubjects> rdf:type owl:Class ;
                                                                                owl:equivalentClass [ owl:intersectionOf ( <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject>
@@ -58,6 +63,7 @@
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject
 <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#Subject> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf :Person ;
                                                                      <http://www.semanticweb.org/akp61793/ontologies/2023/2/Test#name> "Subject" .
 
 
