@@ -41,11 +41,11 @@
           <https://schema.org/name> "Includes" .
 
 
-###  http://www.semanticweb.org/akp61793/ontologies/2023/2/VeevaCDMSSampleOnto#Triggers
-:Triggers rdf:type owl:ObjectProperty ;
-          rdfs:domain :Event ;
-          rdfs:range :Form ;
-          <https://schema.org/name> "Triggers" .
+###  http://www.semanticweb.org/akp61793/ontologies/2023/2/VeevaCDMSSampleOnto#RecordedOn
+:RecordedOn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Event ;
+            rdfs:range :Form ;
+            <https://schema.org/name> "RecordedOn" .
 
 
 #################################################################
