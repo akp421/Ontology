@@ -1,0 +1,781 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://ontologies.gsk.com/OSD/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://ontologies.gsk.com/OSD/">
+    <Prefix name="" IRI="http://ontologies.gsk.com/OSD/"/>
+    <Prefix name="osd" IRI="https://ontologies.gsk.com/osd#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="en-gb">OSD</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000036"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000037"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000038"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000039"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000041"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000042"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000044"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000045"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000046"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000048"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000049"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000175"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000179"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000181"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000195"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000196"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000197"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000198"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000200"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000201"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/event_name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/form"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/item"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/item_group_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/study_id"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://ontologies.gsk.com/osd/subject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="https://ontologies.gsk.com/osd/CRM-O_0000011"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="osd:form_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Estudy_event_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Fform_data_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Ssubject_data_id"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Tstudy_id"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000049"/>
+        <ObjectIntersectionOf>
+            <DataExactCardinality cardinality="1">
+                <DataProperty abbreviatedIRI="osd:item_name"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:string"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                        <Literal>RACE_WHT</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataExactCardinality>
+            <DataExactCardinality cardinality="1">
+                <DataProperty abbreviatedIRI="osd:item_value"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:string"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                        <Literal>TRUE</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000179"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="osd:form_name"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>Adverse events</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000181"/>
+        <DataSomeValuesFrom>
+            <DataProperty abbreviatedIRI="osd:item_value"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000197"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="osd:item_value"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>Female</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000198"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="osd:item_value"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>Male</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000200"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="osd:item_value"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>Hispanic or Latino</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000201"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty abbreviatedIRI="osd:item_value"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:string"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#pattern">
+                    <Literal>Not Hispanic or Latino</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/event_name"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+            <Class IRI="https://ontologies.gsk.com/osd/subject"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/form"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+            <Class IRI="https://ontologies.gsk.com/osd/event_name"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/item"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+            <Class IRI="https://ontologies.gsk.com/osd/item_group_id"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/item_group_id"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+            <Class IRI="https://ontologies.gsk.com/osd/form"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/subject"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+            <Class IRI="https://ontologies.gsk.com/osd/study_id"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000035"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000195"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000036"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000037"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000038"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000039"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000040"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000041"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000049"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000042"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000044"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000045"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000046"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000049"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000047"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000048"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000049"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000175"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000195"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000179"/>
+        <Class IRI="https://ontologies.gsk.com/osd/form"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000181"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000195"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000195"/>
+        <Class IRI="https://ontologies.gsk.com/osd/item"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000197"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000175"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000198"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000175"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000200"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000037"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000201"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000037"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000197"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000198"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000200"/>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000201"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="https://ontologies.gsk.com/osd/event_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Estudy_event_id"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontologies.gsk.com/osd/OSD_0000179"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Fform_data_id"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontologies.gsk.com/osd/item_group_id"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontologies.gsk.com/osd/item_group_id"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontologies.gsk.com/osd/subject"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Ssubject_data_id"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontologies.gsk.com/osd/study_id"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Tstudy_id"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Estudy_event_id"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Ssubject_data_id"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Fform_data_id"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Estudy_event_id"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id1"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Fform_data_id"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id1"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id2"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id3"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id4"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id5"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id6"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Gitem_group_id2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Ssubject_data_id"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Tstudy_id"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:form_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Fform_data_id"/>
+        <Literal>Adverse events</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id1"/>
+        <Literal>SEX</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id1"/>
+        <Literal>Female</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id2"/>
+        <Literal>SEX</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id2"/>
+        <Literal>Male</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id3"/>
+        <Literal>ETHNIC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id3"/>
+        <Literal>Not Hispanic or Latino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id4"/>
+        <Literal>BRTHYY</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1940</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id5"/>
+        <Literal>RACE_WHT</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id5"/>
+        <Literal>TRUE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id6"/>
+        <Literal>ETHNIC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <NamedIndividual IRI="https://ontologies.gsk.com/osd/OSD_Iitem_data_id6"/>
+        <Literal>Hispanic or Latino</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="https://ontologies.gsk.com/osd/CRM-O_0000011"/>
+        <ObjectInverseOf>
+            <ObjectProperty abbreviatedIRI="osd:aggregatedBy"/>
+        </ObjectInverseOf>
+    </EquivalentObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="osd:form_name"/>
+        <Class IRI="https://ontologies.gsk.com/osd/form"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="osd:item_name"/>
+        <Class IRI="https://ontologies.gsk.com/osd/item"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="osd:item_value"/>
+        <Class IRI="https://ontologies.gsk.com/osd/item"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="osd:form_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>osd:aggregatedBy</AbbreviatedIRI>
+        <Literal xml:lang="en-gb">aggregatedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>osd:form_name</AbbreviatedIRI>
+        <Literal xml:lang="en-gb">Form name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>osd:item_name</AbbreviatedIRI>
+        <Literal xml:lang="en-gb">Item name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>osd:item_value</AbbreviatedIRI>
+        <Literal xml:lang="en-gb">Item value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/CRM-O_0000011</IRI>
+        <Literal xml:lang="en-gb">aggregates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000035</IRI>
+        <Literal xml:lang="en-gb">Ethnicity item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000036</IRI>
+        <Literal xml:lang="en-gb">RACE_OTHER item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000037</IRI>
+        <Literal xml:lang="en-gb">ETHNIC item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000038</IRI>
+        <Literal xml:lang="en-gb">RACE_ASIAN_E item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000039</IRI>
+        <Literal xml:lang="en-gb">RACE_ASIAN_JPN item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000040</IRI>
+        <Literal xml:lang="en-gb">RACE_BLAA item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000041</IRI>
+        <Literal xml:lang="en-gb">RACE_WHT_WCEH item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000042</IRI>
+        <Literal xml:lang="en-gb">RACE_AMINALN item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000043</IRI>
+        <Literal xml:lang="en-gb">RACE_ASIAN item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000044</IRI>
+        <Literal xml:lang="en-gb">RACE_ASIAN_SE item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000045</IRI>
+        <Literal xml:lang="en-gb">RACE_NHOPI item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000046</IRI>
+        <Literal xml:lang="en-gb">RACE_WHT_ARBNAH item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000047</IRI>
+        <Literal xml:lang="en-gb">RACE_UNKNOWN item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000048</IRI>
+        <Literal xml:lang="en-gb">RACE_ASIAN_CS item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000049</IRI>
+        <Literal xml:lang="en-gb">RACE_WHT item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000175</IRI>
+        <Literal xml:lang="en-gb">Sex item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000179</IRI>
+        <Literal xml:lang="en-gb">Adverse events form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000181</IRI>
+        <Literal xml:lang="en-gb">Birth year item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000195</IRI>
+        <Literal xml:lang="en-gb">Special purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000196</IRI>
+        <Literal xml:lang="en-gb">Events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000197</IRI>
+        <Literal xml:lang="en-gb">Female sex item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000198</IRI>
+        <Literal xml:lang="en-gb">Male sex item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000200</IRI>
+        <Literal xml:lang="en-gb">Hispanic or Latino item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_0000201</IRI>
+        <Literal xml:lang="en-gb">Not Hispanic or Latino item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Estudy_event_id</IRI>
+        <Literal xml:lang="en-gb">[Study event name]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Fform_data_id</IRI>
+        <Literal xml:lang="en-gb">Adverse events form instance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Gitem_group_id1</IRI>
+        <Literal xml:lang="en-gb">[Item group ID 1]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Gitem_group_id2</IRI>
+        <Literal>[Item group ID 2]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Iitem_data_id1</IRI>
+        <Literal xml:lang="en-gb">SEX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Iitem_data_id2</IRI>
+        <Literal xml:lang="en-gb">SEX</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Iitem_data_id3</IRI>
+        <Literal xml:lang="en-gb">ETHNIC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Iitem_data_id4</IRI>
+        <Literal xml:lang="en-gb">BRTHYY</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Iitem_data_id5</IRI>
+        <Literal xml:lang="en-gb">RACE_WHT</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Iitem_data_id6</IRI>
+        <Literal>ETHNIC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Ssubject_data_id</IRI>
+        <Literal xml:lang="en-gb">[Subject ID]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/OSD_Tstudy_id</IRI>
+        <Literal xml:lang="en-gb">[Study ID]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/event_name</IRI>
+        <Literal xml:lang="en-gb">Study event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/form</IRI>
+        <Literal xml:lang="en-gb">Form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/item</IRI>
+        <Literal xml:lang="en-gb">Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>https://ontologies.gsk.com/osd/subject</IRI>
+        <Literal xml:lang="en-gb">Subject</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
