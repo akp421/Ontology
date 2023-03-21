@@ -54,11 +54,19 @@
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/VeevaCDMSSampleOnto#Event
 :Event rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :RecordedOn ;
+                         owl:someValuesFrom :Form
+                       ] ;
        <https://schema.org/name> "Event" .
 
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/VeevaCDMSSampleOnto#Form
 :Form rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :Includes ;
+                        owl:someValuesFrom :ItemGroup
+                      ] ;
       <https://schema.org/name> "Form" .
 
 
@@ -69,6 +77,10 @@
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/VeevaCDMSSampleOnto#ItemGroup
 :ItemGroup rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :Contains ;
+                             owl:someValuesFrom :Item
+                           ] ;
            <https://schema.org/name> "ItemGroup" .
 
 
@@ -79,7 +91,11 @@
 
 ###  http://www.semanticweb.org/akp61793/ontologies/2023/2/VeevaCDMSSampleOnto#Subject
 :Subject rdf:type owl:Class ;
-         rdfs:subClassOf :Person ;
+         rdfs:subClassOf :Person ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :HasEvent ;
+                           owl:someValuesFrom :Event
+                         ] ;
          <https://schema.org/name> "Subject" .
 
 
