@@ -118,7 +118,7 @@ osd:item_value rdf:type owl:DatatypeProperty ;
 
 ###  http://ontologies.gsk.com/osd/OSD_0000049
 <http://ontologies.gsk.com/osd/OSD_0000049> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000179> ;
                                             rdfs:label "SeriousAdverseEvents"@en-gb .
 
 
@@ -130,13 +130,13 @@ osd:item_value rdf:type owl:DatatypeProperty ;
 
 ###  http://ontologies.gsk.com/osd/OSD_0000051
 <http://ontologies.gsk.com/osd/OSD_0000051> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000179> ;
                                             rdfs:label "AdverseEventsOfSpecialInterest"@en-gb .
 
 
 ###  http://ontologies.gsk.com/osd/OSD_0000052
 <http://ontologies.gsk.com/osd/OSD_0000052> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000179> ;
                                             rdfs:label "SeriousAdverseEventsAESIs"@en-gb .
 
 
@@ -154,13 +154,13 @@ osd:item_value rdf:type owl:DatatypeProperty ;
 
 ###  http://ontologies.gsk.com/osd/OSD_0000055
 <http://ontologies.gsk.com/osd/OSD_0000055> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000179> ;
                                             rdfs:label "NonSeriousAdverseEvents"@en-gb .
 
 
 ###  http://ontologies.gsk.com/osd/OSD_0000056
 <http://ontologies.gsk.com/osd/OSD_0000056> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000179> ;
                                             rdfs:label "AdverseEventsSeriousAdverseEvents"@en-gb .
 
 
