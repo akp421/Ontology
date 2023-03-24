@@ -1,0 +1,559 @@
+@prefix : <http://ontologies.gsk.com/OSD/> .
+@prefix osd: <https://ontologies.gsk.com/osd#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ontologies.gsk.com/osd> .
+
+<http://ontologies.gsk.com/osd> rdf:type owl:Ontology ;
+                                 rdfs:label "OSD"@en-gb .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://ontologies.gsk.com/osd#aggregatedBy
+osd:aggregatedBy rdf:type owl:ObjectProperty ;
+                 rdfs:label "aggregatedBy"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/CRM-O_0000011
+<https://ontologies.gsk.com/osd/CRM-O_0000011> rdf:type owl:ObjectProperty ;
+                                               owl:equivalentProperty [ owl:inverseOf osd:aggregatedBy
+                                                                      ] ;
+                                               rdfs:label "aggregates"@en-gb .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://ontologies.gsk.com/osd#form_name
+osd:form_name rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://ontologies.gsk.com/osd/form> ;
+              rdfs:range xsd:string ;
+              rdfs:label "Form name"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd#item_name
+osd:item_name rdf:type owl:DatatypeProperty ;
+              rdfs:domain <https://ontologies.gsk.com/osd/item> ;
+              rdfs:label "Item name"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd#item_value
+osd:item_value rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain <https://ontologies.gsk.com/osd/item> ;
+               rdfs:label "Item value"@en-gb .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ontologies.gsk.com/osdcentre
+<http://ontologies.gsk.com/osdcentre> rdf:type owl:Class ;
+                                      rdfs:label "Centre" .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000016
+<http://ontologies.gsk.com/osd/OSD_0000016> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/item> ;
+                                            rdfs:label "Interventions"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000017
+<http://ontologies.gsk.com/osd/OSD_0000017> rdf:type owl:Class ;
+                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty osd:item_name ;
+                                                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                       owl:onDatatype xsd:string ;
+                                                                                       owl:withRestrictions ( [ xsd:pattern "AETERM"
+                                                                                                              ]
+                                                                                                            )
+                                                                                     ]
+                                                                ] ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000196> ;
+                                            rdfs:label "Reported Term item"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000020
+<http://ontologies.gsk.com/osd/OSD_0000020> rdf:type owl:Class ;
+                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty osd:item_name ;
+                                                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                       owl:onDatatype xsd:string ;
+                                                                                       owl:withRestrictions ( [ xsd:pattern "CMCAT"
+                                                                                                              ]
+                                                                                                            )
+                                                                                     ]
+                                                                ] ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000196> ;
+                                            rdfs:label "Concomitant or Additional Trtmnt Given item"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000027
+<http://ontologies.gsk.com/osd/OSD_0000027> rdf:type owl:Class ;
+                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty osd:item_name ;
+                                                                  owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                       owl:onDatatype xsd:string ;
+                                                                                       owl:withRestrictions ( [ xsd:pattern "TRTASSGN"
+                                                                                                              ]
+                                                                                                            )
+                                                                                     ]
+                                                                ] ;
+                                            rdfs:subClassOf <http://ontologies.gsk.com/osd/OSD_0000016> ;
+                                            rdfs:label "Name of Treatment"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000046
+<http://ontologies.gsk.com/osd/OSD_0000046> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Assignment form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000049
+<http://ontologies.gsk.com/osd/OSD_0000049> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Serious Adverse Events form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000050
+<http://ontologies.gsk.com/osd/OSD_0000050> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Concomitant Radiotherapy form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000051
+<http://ontologies.gsk.com/osd/OSD_0000051> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Adverse Events of Special Interest form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000052
+<http://ontologies.gsk.com/osd/OSD_0000052> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Serious Adverse Events / AESIs form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000053
+<http://ontologies.gsk.com/osd/OSD_0000053> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Concomitant Medication/Therapy form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000054
+<http://ontologies.gsk.com/osd/OSD_0000054> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Ocular Therapy And Concomitant Medications form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000055
+<http://ontologies.gsk.com/osd/OSD_0000055> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Non-Serious Adverse Events form"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_0000056
+<http://ontologies.gsk.com/osd/OSD_0000056> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                            rdfs:label "Adverse Events/Serious Adverse Events form"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000035
+<https://ontologies.gsk.com/osd/OSD_0000035> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000195> ;
+                                             rdfs:label "Ethnicity item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000037
+<https://ontologies.gsk.com/osd/OSD_0000037> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000035> ;
+                                             rdfs:label "ETHNIC item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000041
+<https://ontologies.gsk.com/osd/OSD_0000041> rdf:type owl:Class ;
+                                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty osd:item_name ;
+                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                                            owl:onDatatype xsd:string ;
+                                                                                                            owl:withRestrictions ( [ xsd:pattern "RACE_WHT_WCEH"
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                          ]
+                                                                                        ]
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty osd:item_value ;
+                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                                            owl:onDatatype xsd:string ;
+                                                                                                            owl:withRestrictions ( [ xsd:pattern "TRUE"
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                          ]
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ] ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000049> ;
+                                             owl:disjointWith <https://ontologies.gsk.com/osd/OSD_0000046> ;
+                                             rdfs:label "RACE_WHT_WCEH item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000046
+<https://ontologies.gsk.com/osd/OSD_0000046> rdf:type owl:Class ;
+                                             owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty osd:item_name ;
+                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                                            owl:onDatatype xsd:string ;
+                                                                                                            owl:withRestrictions ( [ xsd:pattern "RACE_WHT_ARBNH"
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                          ]
+                                                                                        ]
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty osd:item_value ;
+                                                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                                            owl:onDatatype xsd:string ;
+                                                                                                            owl:withRestrictions ( [ xsd:pattern "TRUE"
+                                                                                                                                   ]
+                                                                                                                                 )
+                                                                                                          ]
+                                                                                        ]
+                                                                                      ) ;
+                                                                   rdf:type owl:Class
+                                                                 ] ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000049> ;
+                                             rdfs:label "RACE_WHT_ARBNAH item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000049
+<https://ontologies.gsk.com/osd/OSD_0000049> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000035> ;
+                                             rdfs:label "RACE_WHT item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000175
+<https://ontologies.gsk.com/osd/OSD_0000175> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000195> ;
+                                             rdfs:label "Sex item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000179
+<https://ontologies.gsk.com/osd/OSD_0000179> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/form> ;
+                                             rdfs:label "Adverse Events form"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000181
+<https://ontologies.gsk.com/osd/OSD_0000181> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty osd:item_value ;
+                                                                   owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                        owl:unionOf ( [ rdf:type rdfs:Datatype ;
+                                                                                                        owl:onDatatype xsd:string ;
+                                                                                                        owl:withRestrictions ( [ xsd:pattern "19[0-9]{2}"
+                                                                                                                               ]
+                                                                                                                             )
+                                                                                                      ]
+                                                                                                      [ rdf:type rdfs:Datatype ;
+                                                                                                        owl:onDatatype xsd:string ;
+                                                                                                        owl:withRestrictions ( [ xsd:pattern "2[0-2][0-9]{2}"
+                                                                                                                               ]
+                                                                                                                             )
+                                                                                                      ]
+                                                                                                    )
+                                                                                      ]
+                                                                 ] ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000195> ;
+                                             rdfs:label "Birth Year item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000195
+<https://ontologies.gsk.com/osd/OSD_0000195> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/item> ;
+                                             rdfs:label "Special purpose"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000196
+<https://ontologies.gsk.com/osd/OSD_0000196> rdf:type owl:Class ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/item> ;
+                                             rdfs:label "Events"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000197
+<https://ontologies.gsk.com/osd/OSD_0000197> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty osd:item_value ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                     owl:onDatatype xsd:string ;
+                                                                                     owl:withRestrictions ( [ xsd:pattern "Female"
+                                                                                                            ]
+                                                                                                          )
+                                                                                   ]
+                                                                 ] ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000175> ;
+                                             owl:disjointWith <https://ontologies.gsk.com/osd/OSD_0000198> ;
+                                             rdfs:label "Female sex item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000198
+<https://ontologies.gsk.com/osd/OSD_0000198> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty osd:item_value ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                     owl:onDatatype xsd:string ;
+                                                                                     owl:withRestrictions ( [ xsd:pattern "Male"
+                                                                                                            ]
+                                                                                                          )
+                                                                                   ]
+                                                                 ] ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000175> ;
+                                             rdfs:label "Male sex item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000200
+<https://ontologies.gsk.com/osd/OSD_0000200> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty osd:item_value ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                     owl:onDatatype xsd:string ;
+                                                                                     owl:withRestrictions ( [ xsd:pattern "Hispanic or Latino"
+                                                                                                            ]
+                                                                                                          )
+                                                                                   ]
+                                                                 ] ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000037> ;
+                                             owl:disjointWith <https://ontologies.gsk.com/osd/OSD_0000201> ;
+                                             rdfs:label "Hispanic or Latino item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_0000201
+<https://ontologies.gsk.com/osd/OSD_0000201> rdf:type owl:Class ;
+                                             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty osd:item_value ;
+                                                                   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                   owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                                                     owl:onDatatype xsd:string ;
+                                                                                     owl:withRestrictions ( [ xsd:pattern "Not Hispanic or Latino"
+                                                                                                            ]
+                                                                                                          )
+                                                                                   ]
+                                                                 ] ;
+                                             rdfs:subClassOf <https://ontologies.gsk.com/osd/OSD_0000037> ;
+                                             rdfs:label "Not Hispanic or Latino item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/event_name
+<https://ontologies.gsk.com/osd/event_name> rdf:type owl:Class ;
+                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty osd:aggregatedBy ;
+                                                                  owl:someValuesFrom <https://ontologies.gsk.com/osd/subject>
+                                                                ] ;
+                                            rdfs:label "Study event"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/form
+<https://ontologies.gsk.com/osd/form> rdf:type owl:Class ;
+                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                            owl:onProperty osd:aggregatedBy ;
+                                                            owl:someValuesFrom <https://ontologies.gsk.com/osd/event_name>
+                                                          ] ;
+                                      rdfs:label "Form"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/item
+<https://ontologies.gsk.com/osd/item> rdf:type owl:Class ;
+                                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                            owl:onProperty osd:aggregatedBy ;
+                                                            owl:someValuesFrom <https://ontologies.gsk.com/osd/item_group>
+                                                          ] ;
+                                      rdfs:label "Item"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/item_group
+<https://ontologies.gsk.com/osd/item_group> rdf:type owl:Class ;
+                                            owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty osd:aggregatedBy ;
+                                                                  owl:someValuesFrom <https://ontologies.gsk.com/osd/form>
+                                                                ] ;
+                                            rdfs:label "Item group" .
+
+
+###  https://ontologies.gsk.com/osd/study
+<https://ontologies.gsk.com/osd/study> rdf:type owl:Class ;
+                                       rdfs:label "Study" .
+
+
+###  https://ontologies.gsk.com/osd/subject
+<https://ontologies.gsk.com/osd/subject> rdf:type owl:Class ;
+                                         owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty osd:aggregatedBy ;
+                                                                                      owl:someValuesFrom <http://ontologies.gsk.com/osdcentre>
+                                                                                    ]
+                                                                                    [ rdf:type owl:Restriction ;
+                                                                                      owl:onProperty osd:aggregatedBy ;
+                                                                                      owl:someValuesFrom <https://ontologies.gsk.com/osd/study>
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ] ;
+                                         rdfs:label "Subject"@en-gb .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://ontologies.gsk.com/osd/OSD_0000026
+<http://ontologies.gsk.com/osd/OSD_0000026> rdf:type owl:NamedIndividual ;
+                                            osd:aggregatedBy <http://ontologies.gsk.com/osd/OSD_Gitem_group_id5> ;
+                                            osd:item_name "TRTASSGN" ;
+                                            osd:item_value "A" ;
+                                            rdfs:label "TRTASSGN"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_Cinternal_centre_id
+<http://ontologies.gsk.com/osd/OSD_Cinternal_centre_id> rdf:type owl:NamedIndividual ,
+                                                                 <http://ontologies.gsk.com/osdcentre> ;
+                                                        osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Tinternal_study_id> ;
+                                                        rdfs:label "[Centre ID]" .
+
+
+###  http://ontologies.gsk.com/osd/OSD_Gitem_group_id3
+<http://ontologies.gsk.com/osd/OSD_Gitem_group_id3> rdf:type owl:NamedIndividual ,
+                                                             <https://ontologies.gsk.com/osd/item_group> ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Fform_data_id> ;
+                                                    rdfs:label "[Item group ID 3]"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_Gitem_group_id4
+<http://ontologies.gsk.com/osd/OSD_Gitem_group_id4> rdf:type owl:NamedIndividual ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Fform_data_id> ;
+                                                    rdfs:label "[Item group ID 4]"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_Gitem_group_id5
+<http://ontologies.gsk.com/osd/OSD_Gitem_group_id5> rdf:type owl:NamedIndividual ;
+                                                    rdfs:label "[Item group ID 5]"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_Iitem_data_id7
+<http://ontologies.gsk.com/osd/OSD_Iitem_data_id7> rdf:type owl:NamedIndividual ;
+                                                   osd:aggregatedBy <http://ontologies.gsk.com/osd/OSD_Gitem_group_id3> ;
+                                                   osd:item_name "AETERM" ;
+                                                   osd:item_value "Anemia" ;
+                                                   rdfs:label "AETERM"@en-gb .
+
+
+###  http://ontologies.gsk.com/osd/OSD_Iitem_data_id8
+<http://ontologies.gsk.com/osd/OSD_Iitem_data_id8> rdf:type owl:NamedIndividual ;
+                                                   osd:aggregatedBy <http://ontologies.gsk.com/osd/OSD_Gitem_group_id4> ;
+                                                   osd:item_name "CMCAT" ;
+                                                   osd:item_value "COVID-19 VACCINATION" ;
+                                                   rdfs:label "CMCAT"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Estudy_event_id
+<https://ontologies.gsk.com/osd/OSD_Estudy_event_id> rdf:type owl:NamedIndividual ,
+                                                              <https://ontologies.gsk.com/osd/event_name> ;
+                                                     osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Sinternal_subject_data_id> ;
+                                                     rdfs:label "[Study event name]"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Fform_data_id
+<https://ontologies.gsk.com/osd/OSD_Fform_data_id> rdf:type owl:NamedIndividual ,
+                                                            <https://ontologies.gsk.com/osd/OSD_0000179> ;
+                                                   osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Estudy_event_id> ;
+                                                   osd:form_name "Adverse events" ;
+                                                   rdfs:label "Adverse events form instance"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Gitem_group_id1
+<https://ontologies.gsk.com/osd/OSD_Gitem_group_id1> rdf:type owl:NamedIndividual ,
+                                                              <https://ontologies.gsk.com/osd/item_group> ;
+                                                     osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Fform_data_id> ;
+                                                     rdfs:label "[Item group ID 1]"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Gitem_group_id2
+<https://ontologies.gsk.com/osd/OSD_Gitem_group_id2> rdf:type owl:NamedIndividual ,
+                                                              <https://ontologies.gsk.com/osd/item_group> ;
+                                                     osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Fform_data_id> ;
+                                                     rdfs:label "[Item group ID 2]" .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Iitem_data_id1
+<https://ontologies.gsk.com/osd/OSD_Iitem_data_id1> rdf:type owl:NamedIndividual ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Gitem_group_id1> ;
+                                                    osd:item_name "SEX" ;
+                                                    osd:item_value "Female" ;
+                                                    rdfs:label "SEX"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Iitem_data_id2
+<https://ontologies.gsk.com/osd/OSD_Iitem_data_id2> rdf:type owl:NamedIndividual ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Gitem_group_id2> ;
+                                                    osd:item_name "SEX" ;
+                                                    osd:item_value "Male" ;
+                                                    rdfs:label "SEX"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Iitem_data_id3
+<https://ontologies.gsk.com/osd/OSD_Iitem_data_id3> rdf:type owl:NamedIndividual ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Gitem_group_id1> ;
+                                                    osd:item_name "ETHNIC" ;
+                                                    osd:item_value "Not Hispanic or Latino"^^xsd:string ;
+                                                    rdfs:label "ETHNIC"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Iitem_data_id4
+<https://ontologies.gsk.com/osd/OSD_Iitem_data_id4> rdf:type owl:NamedIndividual ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Gitem_group_id1> ;
+                                                    osd:item_name "BRTHYY" ;
+                                                    osd:item_value "1940"^^xsd:string ;
+                                                    rdfs:label "BRTHYY"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Iitem_data_id5
+<https://ontologies.gsk.com/osd/OSD_Iitem_data_id5> rdf:type owl:NamedIndividual ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Gitem_group_id1> ;
+                                                    osd:item_name "RACE_WHT_ARBNH" ;
+                                                    osd:item_value "TRUE" ;
+                                                    rdfs:label "RACE_WHT_ARBNH"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Iitem_data_id6
+<https://ontologies.gsk.com/osd/OSD_Iitem_data_id6> rdf:type owl:NamedIndividual ;
+                                                    osd:aggregatedBy <https://ontologies.gsk.com/osd/OSD_Gitem_group_id2> ;
+                                                    osd:item_name "ETHNIC" ;
+                                                    osd:item_value "Hispanic or Latino" ;
+                                                    rdfs:label "ETHNIC" .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Sinternal_subject_data_id
+<https://ontologies.gsk.com/osd/OSD_Sinternal_subject_data_id> rdf:type owl:NamedIndividual ,
+                                                                        <https://ontologies.gsk.com/osd/subject> ;
+                                                               osd:aggregatedBy <http://ontologies.gsk.com/osd/OSD_Cinternal_centre_id> ,
+                                                                                <https://ontologies.gsk.com/osd/OSD_Tinternal_study_id> ;
+                                                               rdfs:label "[Subject ID]"@en-gb .
+
+
+###  https://ontologies.gsk.com/osd/OSD_Tinternal_study_id
+<https://ontologies.gsk.com/osd/OSD_Tinternal_study_id> rdf:type owl:NamedIndividual ,
+                                                                 <https://ontologies.gsk.com/osd/study> ;
+                                                        rdfs:label "[Study ID]"@en-gb .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
